@@ -1,0 +1,3 @@
+JSON-Gen.ps1 will generate a JSON file with the relevant contents in ASCII format with the localhost's computer name in the GenericUsername field.
+
+My use case: In my case we were deploying Epic across our company and each workstation needed to have a specific JSON file supplied from the vendor, but each needed to reference its own hostname. My initial group policy pushed out a premade JSON via login script to all PCs, but they were lacking hostname. Additionally, when we would edit these manually and add the hostname they would get replaced on the next logon. Creating this script solved this problem as the correct, custom JSON with the correct hostname per PC is generated locally at each login. 
